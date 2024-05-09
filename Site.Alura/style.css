@@ -44,12 +44,13 @@ body {
     display: flex;
     justify-content: center;
     padding: 1em;
-    font-size: 18px;
+    font-size: 20px;
     align-items: center;
     width: 100%;
     border: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
 
@@ -80,10 +81,40 @@ body {
     text-align: center;
 }
 .aba-conteudo-titulo-secundario{
-    text-align: center;
     color: var(--roxo);
     text-transform: uppercase;
+    text-align: center;
 }
+
+.contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Chakra Petch', sans-serif;
+    border: 8px solid #472c79;
+    background-color: #3a1d5c;
+    padding-bottom: 16px;
+    margin: 40px;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 75px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--roxo);
+    font-size: 20px;
+    margin: 0;
+}
+
+
 
 @media screen and (min-width: 768px) {
     :root {
